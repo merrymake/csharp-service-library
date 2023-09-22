@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>C# Service Library for Merrymake</Title>
+    <PackageId>merrymake-service-library</PackageId>
+    <Authors>theDrLambda</Authors>
+    <Company>Merrymake</Company>
+    <PackageProjectUrl>https://www.merrymake.eu</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/merrymake/csharp-service-library.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>merrymake; service; library</PackageTags>
+    <Version>1.0.3</Version>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+    <ItemGroup>
+	    <Content Include="README.md">
+		    <Pack>true</Pack>
+		    <PackagePath>\</PackagePath>
+	    </Content>
+    </ItemGroup>
+</Project>
