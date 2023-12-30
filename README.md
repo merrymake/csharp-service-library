@@ -7,7 +7,6 @@ This is the official C# service library for Merrymake. It defines all the basic 
 Here is the most basic example of how to use this library: 
 
 ```cs
-using System.Text.Json.Nodes;
 using eu.merrymake.service.csharp;
 
 namespace template.basic
@@ -15,7 +14,7 @@ namespace template.basic
     internal class Program
     {
 
-        static void HandleHello(byte[] payloadBytes, JsonObject envelope)
+        static void HandleHello(byte[] payloadBytes, Envelope envelope)
         {
             string payload = System.Text.Encoding.UTF8.GetString(payloadBytes);
             Merrymake.ReplyToOrigin($"Hello, {payload}!", MimeType.txt);
